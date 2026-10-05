@@ -1,0 +1,548 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #174f3c;
+    background-color: white;
+}
+
+/* ENCABEZADO */
+
+.encabezado {
+    width: 88%;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.logo img {
+    display: block;
+    width: 250px;
+    height: 80px;
+    object-fit: contain;
+    object-position: left center;
+}
+
+/* MENU */
+
+.menu {
+    background-color: rgb(0, 82, 54);
+}
+
+.menu1 {
+    width: 88%;
+    min-height: 55px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu1 > a {
+    color: white;
+    text-decoration: none;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.menu1 ul {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+
+.menu1 ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.menu1 ul li a:hover {
+    color: #f4c400;
+}
+
+/* INICIO */
+
+.inicio {
+    width: 100%;
+    height: 430px;
+    position: relative;
+    overflow: hidden;
+    background-color: #005536;
+}
+
+.inicio img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.inicio1 {
+    position: absolute;
+    top: 0;
+    left: 6%;
+    width: 48%;
+    height: 100%;
+    padding: 75px 20px 20px;
+    color: white;
+    background: linear-gradient(to right, rgba(0, 70, 45, 0.95), rgba(0, 70, 45, 0.65), transparent);
+}
+
+.inicio1 p:first-child {
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+.inicio1 h1 {
+    margin-bottom: 15px;
+    font-size: 48px;
+    line-height: 1;
+}
+
+.inicio1 h3 {
+    margin-bottom: 25px;
+    font-size: 21px;
+}
+
+.inicio1 p:last-child {
+    width: 390px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* DATOS */
+
+.datos {
+    width: 88%;
+    margin: 28px auto;
+    display: flex;
+    gap: 18px;
+}
+
+.datos .tarjeta {
+    flex: 1;
+    min-height: 95px;
+    padding: 20px;
+    background-color: #f3f8f5;
+    border: 1px solid #d9e7e0;
+    border-radius: 8px;
+}
+
+.datos h2 {
+    margin-bottom: 5px;
+    font-size: 25px;
+}
+
+.datos p {
+    color: #526b70;
+}
+
+/* PROGRAMA */
+
+.programa {
+    width: 88%;
+    margin: 55px auto;
+    display: flex;
+    gap: 50px;
+}
+
+.programa1 {
+    width: 55%;
+}
+
+.programa h2,
+.perfil h2,
+.plan h2,
+.docentes h2,
+.investigacion h2,
+.noticias h2,
+.contacto h2 {
+    margin-bottom: 20px;
+    color: #07563e;
+    font-size: 28px;
+}
+
+.programa h2:before,
+.perfil h2:before,
+.plan h2:before,
+.docentes h2:before,
+.investigacion h2:before,
+.noticias h2:before,
+.contacto h2:before {
+    content: "";
+    display: block;
+    width: 38px;
+    height: 4px;
+    margin-bottom: 10px;
+    background-color: #f4c400;
+}
+
+.programa1 p {
+    margin-bottom: 15px;
+    color: #526b70;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.programa2 {
+    width: 45%;
+    padding: 25px;
+    background-color: #eef6f1;
+    border: 1px solid #dcebe3;
+    border-radius: 10px;
+}
+
+.programa2 h3 {
+    margin-bottom: 15px;
+    font-size: 23px;
+}
+
+.programa2 p {
+    margin-bottom: 5px;
+    padding: 12px;
+    background-color: white;
+    border-bottom: 1px solid #dddddd;
+    color: #526b70;
+}
+
+/* PERFIL */
+
+.perfil {
+    width: 88%;
+    margin: 50px auto;
+}
+
+.perfil > p {
+    max-width: 850px;
+    margin-bottom: 25px;
+    color: #526b70;
+    line-height: 1.6;
+}
+
+.perfil1 {
+    display: flex;
+    gap: 20px;
+}
+
+.perfil1 .tarjeta {
+    flex: 1;
+    padding: 25px;
+    background-color: #f5faf7;
+    border: 1px solid #d8e6df;
+    border-radius: 8px;
+}
+
+.perfil1 h4,
+.plan1 h4,
+.docentes h4,
+.investigacion h4,
+.noticias h4 {
+    margin-bottom: 12px;
+    color: #07563e;
+    font-size: 18px;
+}
+
+.perfil1 p,
+.investigacion1 p,
+.noticias1 p {
+    color: #526b70;
+    line-height: 1.5;
+}
+
+/* PLAN DE ESTUDIOS */
+
+.plan {
+    width: 88%;
+    margin: 60px auto;
+}
+
+.plan > p {
+    margin-bottom: 25px;
+    color: #526b70;
+}
+
+.plan1 {
+    display: flex;
+    gap: 20px;
+}
+
+.plan1 .tarjeta {
+    flex: 1;
+    padding: 22px;
+    background-color: #f5faf7;
+    border: 1px solid #d8e6df;
+    border-radius: 8px;
+}
+
+.plan1 ul {
+    padding-left: 20px;
+    color: #526b70;
+    line-height: 1.8;
+}
+
+/* DOCENTES */
+
+.docentes {
+    width: 88%;
+    margin: 60px auto;
+}
+
+.docentes1 {
+    width: 350px;
+}
+
+.docentes1 .tarjeta {
+    width: 100%;
+    overflow: hidden;
+    background-color: white;
+    border: 1px solid #d8e6df;
+    border-radius: 8px;
+}
+
+.docentes1 img {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.texto {
+    padding: 18px;
+}
+
+.texto p {
+    color: #526b70;
+}
+
+/* INVESTIGACION */
+
+.investigacion {
+    width: 88%;
+    margin: 60px auto;
+}
+
+.investigacion > p {
+    margin-bottom: 25px;
+    color: #526b70;
+    line-height: 1.6;
+}
+
+.investigacion1 {
+    display: flex;
+    gap: 20px;
+}
+
+.investigacion1 .tarjeta {
+    flex: 1;
+    padding: 25px;
+    background-color: #f5faf7;
+    border: 1px solid #d8e6df;
+    border-radius: 8px;
+}
+
+/* NOTICIAS */
+
+.noticias {
+    width: 88%;
+    margin: 60px auto;
+}
+
+.noticias1 {
+    display: flex;
+    gap: 20px;
+}
+
+.noticias1 .tarjeta {
+    flex: 1;
+    padding: 25px;
+    background-color: #f5faf7;
+    border: 1px solid #d8e6df;
+    border-radius: 8px;
+}
+
+/* CONTACTO */
+
+.contacto {
+    width: 88%;
+    margin: 60px auto;
+}
+
+.contacto1 {
+    display: flex;
+    gap: 50px;
+    padding: 25px;
+    background-color: #f3f8f5;
+    border: 1px solid #d8e6df;
+    border-radius: 8px;
+}
+
+.contacto1 > div {
+    flex: 1;
+}
+
+.contacto1 p {
+    margin-bottom: 12px;
+    color: #526b70;
+}
+
+/* PIE DE PAGINA */
+
+.pie {
+    margin-top: 70px;
+    padding: 45px 0 20px;
+    background-color: rgb(0, 76, 52);
+    color: white;
+}
+
+.pie1 {
+    width: 88%;
+    margin: auto;
+    display: flex;
+    gap: 50px;
+}
+
+.pie1 > div {
+    flex: 1;
+}
+
+.pie h4 {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.pie p {
+    margin-bottom: 8px;
+}
+
+.pie ul {
+    list-style: none;
+}
+
+.pie li {
+    margin-bottom: 8px;
+}
+
+.pie a {
+    color: white;
+    text-decoration: none;
+}
+
+.pie a:hover {
+    color: #f4c400;
+}
+
+.pie hr {
+    width: 88%;
+    margin: 30px auto 15px;
+    border: none;
+    border-top: 1px solid #4a7767;
+}
+
+.final {
+    text-align: center;
+    font-size: 13px;
+}
+
+/* CELULAR */
+
+@media (max-width: 800px) {
+
+    .encabezado {
+        height: 85px;
+        padding: 10px 0;
+    }
+
+    .logo img {
+        width: 190px;
+        height: 70px;
+    }
+
+    .menu1 {
+        flex-direction: column;
+        padding: 15px 0;
+        gap: 15px;
+    }
+
+    .menu1 ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .inicio {
+        height: 400px;
+    }
+
+    .inicio img {
+        object-position: center;
+    }
+
+    .inicio1 {
+        left: 5%;
+        width: 90%;
+        padding-top: 60px;
+    }
+
+    .inicio1 h1 {
+        font-size: 38px;
+    }
+
+    .inicio1 p:last-child {
+        width: 90%;
+    }
+
+    .datos,
+    .programa,
+    .perfil1,
+    .plan1,
+    .investigacion1,
+    .noticias1,
+    .contacto1,
+    .pie1 {
+        flex-direction: column;
+    }
+
+    .datos .tarjeta {
+        width: 100%;
+    }
+
+    .programa1,
+    .programa2 {
+        width: 100%;
+    }
+
+    .perfil1 .tarjeta,
+    .plan1 .tarjeta,
+    .investigacion1 .tarjeta,
+    .noticias1 .tarjeta {
+        width: 100%;
+    }
+
+    .docentes1 {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .contacto1 {
+        gap: 10px;
+    }
+
+    .pie1 {
+        gap: 25px;
+    }
+}
